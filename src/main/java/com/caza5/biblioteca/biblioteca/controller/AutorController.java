@@ -21,7 +21,7 @@ public class AutorController {
     }
 
 
-    //metodo buscar todos los registro
+    //metodo buscar todos los registros de la base de datos
     @GetMapping
     public  List<AutorDTO> buscarTodosLosRegistros(){
         return autorService.buscarAutores();
