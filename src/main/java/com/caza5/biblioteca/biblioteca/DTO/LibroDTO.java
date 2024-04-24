@@ -14,6 +14,7 @@ public class LibroDTO {
     private BigDecimal precio;
     private LocalDate fechaEdicion;
     private AutorDTO autorDTO;
+    private Integer idAutor;
 
     //constructor
     public LibroDTO(LibroModel libroModel){
@@ -23,6 +24,7 @@ public class LibroDTO {
         this.precio = libroModel.getPrecio();
         this.fechaEdicion = libroModel.getFechaEdicion();
         this.autorDTO = new AutorDTO(libroModel.getAutor());
+
 
     }
     //getters y setter
@@ -73,5 +75,13 @@ public class LibroDTO {
 
     public void setAutorDTO(AutorDTO autorDTO) {
         this.autorDTO = autorDTO;
+    }
+
+    public Integer getIdAutor() {
+        return idAutor;
+    }
+
+    public void setIdAutor(Integer idAutor) {
+        this.idAutor = idAutor;
     }
 }

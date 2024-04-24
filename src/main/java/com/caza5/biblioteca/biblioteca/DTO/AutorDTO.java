@@ -52,4 +52,5 @@ public class AutorDTO {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
 }

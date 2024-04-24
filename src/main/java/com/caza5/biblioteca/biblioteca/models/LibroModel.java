@@ -20,12 +20,15 @@ public class LibroModel {
     //Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="libro_id")
     private Integer libroId;
     private String nombre;
     private String editorial;
     private BigDecimal precio;
+    @Column(name="fecha_edicion")
     private LocalDate fechaEdicion;
     @ManyToOne
+    @JoinColumn(name="autor_autor_id")
     private AutorModel autor;
 
     //getters y setters
