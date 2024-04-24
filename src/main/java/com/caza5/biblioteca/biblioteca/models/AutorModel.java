@@ -18,6 +18,7 @@ public class AutorModel {
     //Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="autor_id")
     private Integer autorId;
     private String nombre;
     private String apellido;
